@@ -1,0 +1,57 @@
+// Go to the path where the file name stay,
+// use the `filename` key
+
+$path_to_font:"../fonts/";
+
+// Store all the value inside of object
+// Use the same key name in each object
+$font-faces: 
+  (
+    name: "Montserrat SemiBold",
+    system-name: "Montserrat-SemiBold",
+    weight: 600,
+    style: normal,
+    filename: "montserrat-600"
+  ),
+  (
+    name: "Poppins Regular",
+    system-name: "Poppins-Regular",
+    weight: 400,
+    style: normal,
+    filename: "poppins-400"
+  ),
+  (
+    name: "Poppins SemiBold",
+    system-name: "Poppins-SemiBold",
+    weight: 600,
+    style: normal,
+    filename: "poppins-600"
+  ),
+  (
+    name: "PT Serif Regular",
+    system-name: "PT-Serif-Regular",
+    weight: 400,
+    style: normal,
+    filename: "ptserif-400"
+  ),
+  (
+    name: "PT Serif Bold",
+    system-name: "PT-Serif-Bold",
+    weight: 700,
+    style: normal,
+    filename: "ptserif-700"
+  )
+;
+
+@each $face in $font-faces {
+  @font-face {
+    font-family: map-get($face, name);
+    font-weight: map-get($face, weight);
+    font-style: map-get($face, style);
+      src: 
+        local(map-get($face, name)),
+        local(map-get($face, system-name)),
+        url('#{$path_to_font}#{map-get($face, filename)}.woff2') format(woff2),
+        url('#{$path_to_font}#{map-get($face, filename)}.woff') format(woff),
+  }
+}

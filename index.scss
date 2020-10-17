@@ -1,3 +1,30 @@
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2"),
+         url("/fonts/Montserrat-SemiBold.woff") format("woff");
+  }
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("./fonts/Poppins-Regular.woff2") format("woff2"),
+         url("./fonts/Poppins-Regular.woff") format("woff");
+  }
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("./fonts/Poppins-SemiBold.woff2") format("woff2"),
+         url("./fonts/Poppins-SemiBold.woff") format("woff");
+  }
+@font-face {
+    font-family: "PTSerif-Bold";
+    src: url("./fonts/PTSerif-Bold.woff2") format("woff2"),
+         url("./fonts/PTSerif-Bold.woff") format("woff");
+  }
+@font-face {
+    font-family: "PTSerif-Regular";
+    src: url("./fonts/PTSerif-Regular.woff2") format("woff2"),
+         url("./fonts/PTSerif-Regular.woff") format("woff");
+  }
+
+
 body {
     margin: 0;
 }
@@ -7,7 +34,7 @@ header {
         padding-left: 12px;
         padding-bottom: 38px;
         margin: 0;
-        // font-family: PT Serif;
+        font-family: "PTSerif-Bold";
         font-style: normal;
         font-weight: bold;
         font-size: 36px;
@@ -16,7 +43,7 @@ header {
         color: #000000;
     }
     h3 {
-        // font-family: Poppins;
+        font-family: "Poppins-SemiBold";
         font-style: normal;
         font-weight: 600;
         font-size: 18px;
@@ -30,7 +57,7 @@ header {
     p {
         padding-left: 12px;
         max-width: 333px;
-        // font-family: Poppins;
+        font-family: "Poppins-Regular";
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -67,8 +94,8 @@ main {
                 color: #000000;
             }
         }
-        p {
-            // font-family: Poppins;
+        a {
+            font-family: "Poppins-SemiBold";
             font-style: normal;
             font-weight: 600;
             font-size: 18px;
@@ -102,6 +129,11 @@ main {
             font-size: 18px;
             margin: 0;
             padding-bottom: 96px;
+        }
+    }
+    main {
+        section {
+
         }
     }
 }
