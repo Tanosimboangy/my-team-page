@@ -52,9 +52,28 @@ main {
             li {
                 list-style: none;
                 img {
-                    max-width: 300px;
+                    max-width: 250px;
                 }
             }
+            li:nth-of-type(2) {
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+                // font-family: PT Serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: #000000;
+            }
+        }
+        p {
+            // font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #000000;
         }
     }
 }
