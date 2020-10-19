@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("/Montserrat-SemiBold.b11ec6b4.woff2") format("woff2"), url("/Montserrat-SemiBold.5275f802.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("/Poppins-Regular.9e42f474.woff2") format("woff2"), url("/Poppins-Regular.6403b602.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("/Poppins-SemiBold.1fd6d126.woff2") format("woff2"), url("/Poppins-SemiBold.aa15eec8.woff") format("woff");
+}
+@font-face {
+  font-family: "PTSerif-Bold";
+  src: url("/PTSerif-Bold.30036589.woff2") format("woff2"), url("/PTSerif-Bold.88e04a0f.woff") format("woff");
+}
+@font-face {
+  font-family: "PTSerif-Regular";
+  src: url("/PTSerif-Regular.7533d300.woff2") format("woff2"), url("/PTSerif-Regular.54153276.woff") format("woff");
+}
+body {
+  margin: 0;
+}
+
+header {
+  max-width: 95%;
+  margin: auto;
+}
+header h1 {
+  padding-top: 17px;
+  padding-left: 12px;
+  padding-bottom: 38px;
+  margin: 0;
+  font-family: "PTSerif-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  color: #000000;
+}
+header h3 {
+  font-family: "Poppins-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding-left: 12px;
+  padding-bottom: 10px;
+}
+header p {
+  padding-left: 12px;
+  max-width: 333px;
+  font-family: "Poppins-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  margin: 0;
+  padding-bottom: 38px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+  column-gap: 30px;
+  max-width: 95%;
+  margin: auto;
+}
+main section:nth-of-type(2n) {
+  padding-top: 54px;
+}
+main section ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+main section ul li {
+  list-style: none;
+}
+main section ul li img {
+  max-width: 100%;
+}
+main section ul li:nth-of-type(2) {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: "PTSerif-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+main section a {
+  font-family: "Poppins-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  text-decoration: none;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 88px;
+  padding-bottom: 15px;
+}
+footer p a {
+  font-family: "Montserrat-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A9A9A9;
+  text-decoration: none;
+}
+
+@media (min-width: 1120px) {
+  .container {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 110px;
+  }
+  header h1 {
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  header h3 {
+    padding-left: 0;
+  }
+  header p {
+    padding-left: 0;
+    max-width: 439px;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 96px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+  }
+  main section:nth-of-type(2n) {
+    padding-top: 0;
+  }
+  main section:nth-of-type(3n-1) {
+    padding-top: 100px;
+  }
+
+  footer p {
+    padding-top: 100px;
+  }
+}
+
+/*# sourceMappingURL=/my-team-page.80ee2152.css.map */
